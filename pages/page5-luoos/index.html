@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+    <meta charset="utf-8"/>
+    <!--<meta http-equiv="Content-Security-Policy"-->
+    <!--content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">-->
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+
+    <!-- 引入OnsenUI/AngularJS的CSS文件-->
+    <link rel="stylesheet" href="lib/onsen/css/onsenui.css"/>
+    <link rel="stylesheet" href="lib/onsen/css/onsen-css-components-blue-theme.css"/>
+    <link rel="stylesheet" href="lib/angular/angular-csp.css"/>
+    <link rel="stylesheet" href="lib/angular-ui-bootstrap/dist/ui-bootstrap-csp.css"/>
+    <link rel="stylesheet" href="bootstrap-3.3.5-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="css/recommend.css">
+    <link rel="stylesheet" href="css/search.css">
+    <link rel="stylesheet" href="css/find.css">
+    <link rel="stylesheet" href="css/my.css">
+    <link rel="stylesheet" href="css/community.css">
+    <link rel="stylesheet" href="css/music.css">
+    <link rel="stylesheet" href="css/myNews.css">
+    <link rel="stylesheet" href="css/myCache.css">
+    <title>落网-独立音乐推荐</title>
+
+    <!-- 引入OnsenUI/AngularJS的js文件-->
+    <script src="lib/angular/angular.js"></script>
+    <script src="lib/onsen/js/onsenui.js"></script>
+    <!--<script src="lib/angular-ui-bootstrap/dist/ui-bootstrap.js"></script>-->
+    <!--<script src="lib/angular-ui-bootstrap/dist/ui-bootstrap-tpls.js"></script>-->
+    <script src="jquery-3.1.0.min.js"></script>
+    <script src="bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
+    <!--<script src="customComponent/star/star.js"></script>-->
+
+    <script src="app_module.js"></script>
+    <!--<script src="cordova.js"></script>
+    <script src="cordova_plugins.js"></script>-->
+    <!--<script src="js/IndexController.js"></script>-->
+    <script src="js/indexController.js"></script>
+    <script src="js/screenCarousel.js"></script>
+    <script src="js/remController.js"></script>
+    <script src="js/searchController.js"></script>
+    <script src="js/findController.js"></script>
+    <script src="js/myController.js"></script>
+    <script src="js/communityController.js"></script>
+    <script src="js/musicController.js"></script>
+    <script src="js/myNews.js"></script>
+    <script src="js/myCacheController.js"></script>
+
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            text-transform: none;/*更改文本为大写的问题*/
+        }
+    </style>
+
+
+
+</head>
+<body>
+<ons-navigator var="mainNavi">
+    <ons-page ng-controller="indexController">
+        <ons-tabbar>
+            <ons-tab ng-repeat="item in items" page={{item.page}} label={{item.name}} icon={{item.src}} active={{item.result}}>
+            </ons-tab>
+        </ons-tabbar>
+    </ons-page>
+</ons-navigator>
+</body>
+</html>

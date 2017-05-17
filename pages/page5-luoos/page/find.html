@@ -1,0 +1,63 @@
+<ons-page ng-controller="findController">
+    <ons-toolbar>
+        <div class="left">
+            <ons-icon icon="ion-search" ng-click="search()" style="font-size: 30px;margin-top: 6px;margin-left: 5px"></ons-icon>
+        </div>
+        <div class="center">发现</div>
+            <div class="right">
+                <ons-icon icon="ion-heart-broken" ng-click="music()" style="font-size: 30px;margin-top: 6px;margin-right: 5px"></ons-icon>
+            </div>
+    </ons-toolbar>
+
+    <!-------------------期刊专题区域---------------->
+    <section id="subject">
+        <!--标题-->
+        <div class="title">
+            <p class="pull-left clearfix">期刊专题</p><p class="pull-right clearfix">全部</p>
+        </div>
+        <!--旋转木马-->
+        <div id="muMa">
+            <ons-carousel swipeable initial-index="0"  item-width="60%"  var="carousel">
+                <ons-carousel-item ng-repeat="item in imgs">
+                    <img  src={{item.src}} alt={{item.alt}}>
+                    <div class="text-center">
+                        <p class="text-center1">{{item.content1}}</p>
+                        <p class="text-center2">{{item.content2}}</p>
+                    </div>
+                </ons-carousel-item>
+            </ons-carousel>
+        </div>
+    </section>
+
+    <!--------------------期刊分类区域---------->
+    <section id="classify">
+        <!--标题-->
+        <div class="title">
+            <p class="pull-left clearfix">期刊分类</p><p class="pull-right clearfix">全部</p>
+        </div>
+        <!--旋转木马-->
+        <div id="muMa1">
+            <ons-carousel swipeable initial-index="0"  item-width="25%"  var="carousel">
+                <ons-carousel-item ng-repeat="item in imgs2">
+                    <div class="text-center">{{item.name}}</div>
+                </ons-carousel-item>
+            </ons-carousel>
+        </div>
+    </section>
+
+    <!---------------列表分栏区域------------>
+    <section id="myList" class="container">
+        <ons-list ng-repeat="item in imgs3">
+            <ons-list-item>{{item.content}}<ons-icon class="text-right" icon={{item.icon}}></ons-icon></ons-list-item>
+        </ons-list>
+    </section>
+
+    <!----------下拉刷新----------->
+    <ons-pull-hook ng-action="load($done)" fixed-content var="loader">
+      <span ng-switch="loader.getCurrentState()">
+        <span ng-switch-when="initial"><ons-icon size="35px" icon="ion-arrow-down-a"></ons-icon> </span>
+        <span ng-switch-when="preaction"><ons-icon size="35px" icon="ion-arrow-up-a"></ons-icon></span>
+        <span ng-switch-when="action"><ons-icon size="35px" spin="true" icon="ion-music-note "></ons-icon>  皮皮虾我们走...</span>
+      </span>
+    </ons-pull-hook>
+</ons-page>

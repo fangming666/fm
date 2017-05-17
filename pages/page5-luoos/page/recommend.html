@@ -1,0 +1,81 @@
+<ons-page id="recommend" ng-controller="remController" >
+    <ons-toolbar>
+        <div class="left">
+            <ons-icon icon="ion-search" ng-click="search()" style="font-size: 30px;margin-top: 6px;margin-left: 5px"></ons-icon>
+        </div>
+        <div class="center">推荐</div>
+        <div class="right">
+        <ons-icon icon="ion-heart-broken" ng-click="music()" style="font-size: 30px;margin-top: 6px;margin-right: 5px"></ons-icon>
+        </div>
+    </ons-toolbar>
+
+    <!------------图片轮播区域--------------->
+    <section id="carousel-example-generic" class=" carousel slide container" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#carousel-example-generic" ng-repeat="item in circle" data-slide-to={{item.data}} class={{item.class}}></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+            <div ng-repeat="item in imgs1" class={{item.class}}>
+                <img src={{item.src}} alt={{item.alt}}>
+            </div>
+        </div>
+    </section>
+
+    <!----------最新周刊区域---------->
+    <section id="weekly" >
+        <!--标题-->
+        <div class="title">
+            <p class="pull-left clearfix">最新周刊</p><p class="pull-right clearfix">全部</p>
+        </div>
+       <!--旋转木马-->
+        <div id="muMa">
+        <ons-carousel swipeable initial-index="0"  item-width="50%"  var="carousel">
+            <ons-carousel-item ng-repeat="item in imgs2">
+                <img  src={{item.src}} alt={{item.alt}}>
+                <p class="text-left">{{item.content}}</p>
+            </ons-carousel-item>
+        </ons-carousel>
+        </div>
+    </section>
+
+    <!----------专属订阅区域---------->
+    <section id="subscribe" >
+        <!--标题-->
+        <div class="title">
+            <p class="pull-left clearfix">专属订阅</p>
+        </div>
+        <!--旋转木马-->
+        <div id="muMa2">
+            <ons-carousel swipeable initial-index="0"  item-width="90%"  var="carousel">
+                <ons-carousel-item ng-repeat="item in imgs3">
+                    <img  src={{item.src}} alt={{item.alt}}>
+                </ons-carousel-item>
+            </ons-carousel>
+        </div>
+    </section>
+
+    <!-------------精选评论区域---------->
+    <section id="comment" >
+        <!--标题-->
+        <div class="title clearfix">
+            <p class="pull-left">精选评论</p>
+        </div>
+        <!--内容-->
+        <div class="container text-center">
+            <p id="one">“落，白天的优雅，黑夜的洒脱。谁，白天的忙碌，黑夜的慵懒。”</p>
+        </div>
+        <p class="text-center bottom">已经落在最低处了</p>
+    </section>
+
+    <!----------下拉刷新----------->
+    <ons-pull-hook ng-action="load($done)" fixed-content var="loader">
+      <span ng-switch="loader.getCurrentState()">
+        <span ng-switch-when="initial"><ons-icon size="35px" icon="ion-arrow-down-a"></ons-icon> </span>
+        <span ng-switch-when="preaction"><ons-icon size="35px" icon="ion-arrow-up-a"></ons-icon> </span>
+        <span ng-switch-when="action"><ons-icon size="35px" spin="true" icon="ion-music-note "></ons-icon>  皮皮虾我们走...</span>
+      </span>
+    </ons-pull-hook>
+</ons-page>

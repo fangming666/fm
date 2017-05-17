@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>微软官网</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="bootstrap/bootstrap-3.3.5-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="css/microsoft.css">
+    <script src="jquery/jquery-3.1.1.js"></script>
+</head>
+<body>
+<!------------------设置头部部分----------------->
+<header>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <!-- 设置导航菜单-->
+            <div class="navbar-header">
+                <button class="navbar-toggle pull-right" data-toggle="collapse" data-target="#showContent">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">
+                    <img src="img/logo.png" >
+                </a>
+            </div>
+
+    <div class="collapse navbar-collapse" id="showContent">
+        <ul class="nav navbar-nav">
+            <li class="dropdown">
+                <a  href="#" class="dropdown-toggle headerLi" data-toggle="dropdown">
+                    商店 <b class="caret"></b>
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">微软官方商城</a></li>
+                    <li><a href="#">寻找店铺</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle  headerLi" data-toggle="dropdown">
+                    产品 <b class="caret"></b>
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">软件和服务</a></li>
+                    <li><a href="#">设备和X-BOX</a></li>
+                    <li><a href="#">适用于商业领域</a></li>
+                    <li><a href="#">适用于开发人员和IT人员</a></li>
+                    <li><a href="#">适用于学号是呢过和教育工作者</a></li>
+                </ul>
+            </li>
+            <li><a href="#" class=" headerLi">支持</a></li>
+        </ul>
+        <!-- 设置搜索框-->
+        <div id="search"  class="text-center col-lg-3 hidden-xs col-md-2">
+            <div class="form-group has-feedback text-center">
+                <label for="mySearch" class="control-label sr-only">search</label>
+                <input type="text" id="mySearch" class="form-control" placeholder="在Microsoft.com中搜索"/>
+                <span class="glyphicon glyphicon-search form-control-feedback"></span>
+            </div>
+        </div>
+
+        <div id="headerShop" class="visible-lg">
+            <ul class="nav navbar-nav">
+                <li>
+                    <span class="glyphicon glyphicon-shopping-cart"></span>
+                </li>
+                <li>
+                    <span>登录</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+  </div>
+</nav>
+
+</header>
+
+<!--------------------图片轮播区域---------------------->
+<section class="carousel">
+    <!-- 大屏图片轮播-->
+    <div class="container hidden-xs hidden-sm ">
+        <h4>
+            <img src="img/liwu.png" alt="liWu">
+            <a href="#">旧貌换新颜，满赠新春礼. 点击立享</a>
+            <span class="glyphicon glyphicon-chevron-right"></span>
+        </h4>
+
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                    <img src="img/lunbo1.jpg" alt="lunbo1" class="">
+                    <div class="carousel-caption hidden-sm hidden-xs">
+                        <h3 class="text-left ">Surface</h3>
+                        <p class="text-left">极具生产力的商用设备。</p>
+                        <div class="text-left">
+                            <button class="btn btn-default">了解更多></button>
+                            <button class="btn btn-default">立即购买></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="img/lunbo2.jpg" alt="lunbo2">
+                    <div class="carousel-caption hidden-sm hidden-xs">
+                        <h3 class="text-left">将工作做到最好</h3>
+                        <p class="text-left">使用 Office 365，您可以在任何设备上编辑、
+                            </p><p class="text-left">分析和演示 Office 2016 文档。</p>
+                        <div class="text-left">
+                            <button class="btn btn-default">了解更多></button>
+                            <button class="btn btn-default">立即购买></button>
+                        </div>
+                    </div>
+                </div>
+
+
+            <!-- Controls -->
+            <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+    </div>
+    <!-- 小屏图片轮播-->
+    <div class="container-fluid hidden-lg hidden-md">
+        <h4>
+            <img src="img/liwu.png" alt="liWu">
+            <a href="#">旧貌换新颜，满赠新春礼. 点击立享</a>
+            <span class="glyphicon glyphicon-chevron-right"></span>
+        </h4>
+
+        <div id="carousel-example-generic1" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                    <img src="img/lunbo1.jpg" alt="lunbo1" class="">
+                    <div>
+                        <h3 class="text-center ">Surface</h3>
+                        <p class="text-center">极具生产力的商用设备。</p>
+                        <div class="text-center">
+                            <button class="btn btn-default">了解更多></button>
+                            <button class="btn btn-default">立即购买></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="img/lunbo2.jpg" alt="lunbo2">
+                    <div>
+                        <h3 class="text-center">将工作做到最好</h3>
+                        <p class="text-center">使用 Office 365，您可以在任何设备上编辑、分析和演示 Office 2016 文档。</p>
+                        <div class="text-center">
+                            <button class="btn btn-default">了解更多></button>
+                            <button class="btn btn-default">立即购买></button>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Controls -->
+                <a class="left carousel-control" href="#carousel-example-generic1" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#carousel-example-generic1" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!---------------商品展示区---------------->
+<section class="shop">
+    <div class="container">
+        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+            <img src="img/shop1.jpg">
+            <h3>为您特别推荐的新电脑</h3>
+            <p>在这些设备上亲身体验Windows的非凡魅力</p>
+            <a href="#">了解为您特别推荐的电脑&gt;</a>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+            <img src="img/shop2.jpg">
+            <h3>Xbox One</h3>
+            <p>尽情娱乐</p>
+            <a href="#">购买最新Xbox One&gt;</a>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+            <img src="img/shop3.jpg">
+            <h3>Window10</h3>
+            <p>提供新功能和增强功能</p>
+            <a href="#">了解Window10&gt;</a>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+            <img src="img/shop4.jpg">
+            <h3>Xbox Note</h3>
+            <p>整理笔记和你的生活</p>
+            <a href="#">免费下载Xbox Note&gt;</a>
+        </div>
+    </div>
+</section>
+
+<!-------------商品商城区域------------->
+<section class="shopMall">
+    <div class="container  hidden-sm hidden-xs">
+        <img src="img/mallbg.jpg" alt="lunbo1">
+        <div class="shopMallOne">
+            <h2>微软官方商城</h2>
+            <h4>寻找适合的技术，满足生活、学习、工作和娱乐所需</h4>
+            <div >
+                <button class="btn btn-default btn-lg">立即购买&gt;</button>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid  hidden-md hidden-lg">
+        <img src="img/mallbg.jpg" alt="lunbo1" class="">
+        <div  class="shopMallTwo">
+            <h2 class="text-center">微软官方商城</h2>
+            <h4 class="text-center">寻找适合的技术，满足生活、学习、工作和娱乐所需</h4>
+            <div class="text-center">
+                <button class="btn btn-default btn-lg">立即购买&gt;</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!---------------商品第二展示区---------------->
+<section class="shopTwo hidden-sm hidden-xs">
+    <div class="container">
+        <div class="col-lg-3 col-md-6">
+            <img src="img/shop01.jpg">
+            <h3>Office 365 企业版 E5</h3>
+            <p>充分利用全新功能</p>
+            <a href="#">了解Office 365 企业版 &gt;</a>
+        </div>
+        <div class="col-lg-3 col-md-6">
+            <img src="img/shop02.jpg">
+            <h3>Window 10 企业版</h3>
+            <p>下载适用于 IT 专业人士的 90 天免费评估版。</p>
+            <a href="#">下载 Window 10 企业版&gt;</a>
+        </div>
+        <div class="col-lg-3 col-md-6">
+            <img src="img/shop03.png">
+            <h3>Visual Studio 2015</h3>
+            <p>适用于所有开发人员和所有应用的工具。</p>
+            <a href="#">下载 VISUAL STUDIO 2015&gt;</a>
+        </div>
+        <div class="col-lg-3 col-md-6">
+            <img src="img/shop04.png">
+            <h3>Microsoft Azure</h3>
+            <p>立即开始构建 Web 应用。</p>
+            <a href="#">开设免费 AZURE 帐户&gt;</a>
+        </div>
+    </div>
+</section>
+<section class="shopThree hidden-lg hidden-md">
+    <div class="container">
+        <div class="col-sm-6 col-xs-12">
+            <img src="img/shop01.jpg">
+            <h3>Office 365 企业版 E5</h3>
+            <p>充分利用全新功能</p>
+            <a href="#">了解Office 365 企业版 &gt;</a>
+        </div>
+        <div class="col-sm-6 col-xs-12">
+            <img src="img/shop02.jpg">
+            <h3>Window 10 企业版</h3>
+            <p>下载适用于 IT 专业人士的 90 天免费评估版。</p>
+            <a href="#">下载 Window 10 企业版&gt;</a>
+        </div>
+        <div class="col-sm-6 col-xs-12">
+            <img src="img/shop03.png">
+            <h3>Visual Studio 2015</h3>
+            <p>适用于所有开发人员和所有应用的工具。</p>
+            <a href="#">下载 VISUAL STUDIO 2015&gt;</a>
+        </div>
+        <div class="col-sm-6 col-xs-12">
+            <img src="img/shop04.png">
+            <h3>Microsoft Azure</h3>
+            <p>立即开始构建 Web 应用。</p>
+            <a href="#">开设免费 AZURE 帐户&gt;</a>
+        </div>
+    </div>
+</section>
+
+<!------------------第二图片轮播区域----------------->
+<section class="carousel">
+    <!-- 大屏图片轮播-->
+    <div class="container hidden-xs hidden-sm ">
+
+        <div id="carousel-example-generic01" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                    <img src="img/lunbo01.jpg" alt="lunbo01" class="">
+                    <div class="carousel-caption hidden-sm hidden-xs">
+                        <h3 class="text-left ">在人工智能上，微软如何做到</h3>
+                        <p class="text-left" style="font-size:18px;margin-top: 30px;margin-bottom: 30px">“看上去好玩” 和 “实际上有用”？</p>
+                        <div class="text-left">
+                            <button class="btn btn-default ">了解更多></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="img/lunbo02.jpg" alt="lunbo2">
+                    <div class="carousel-caption hidden-sm hidden-xs">
+                        <h3 class="text-left"> 奥运精神永不落幕</h3>
+                        <p class="text-left" style="font-size:18px;margin-top: 30px;margin-bottom: 30px">微软员工演绎多元日常</p>
+                        <div class="text-left">
+                            <button class="btn btn-default">了解更多></button>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Controls -->
+                <a class="left carousel-control" href="#carousel-example-generic01" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#carousel-example-generic01" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- 小屏图片轮播-->
+    <div class="container-fluid hidden-lg hidden-md">
+        <div id="carousel-example-generic02" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators" style="margin-bottom: 20px">
+                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                    <img src="img/lunbo01.jpg" alt="lunbo1" class="">
+                    <div style="padding-bottom: 20px">
+                        <h3 class="text-center ">在人工智能上，微软如何做到</h3>
+                        <p class="text-center">“看上去好玩” 和 “实际上有用”？。</p>
+                        <div class="text-center">
+                            <button class="btn btn-default">了解更多></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="img/lunbo02.jpg" alt="lunbo2">
+                    <div style="padding-bottom: 20px">
+                        <h3 class="text-center">奥运精神永不落幕</h3>
+                        <p class="text-center">微软员工演绎多元日常</p>
+                        <div class="text-center">
+                            <button class="btn btn-default">了解更多></button>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Controls -->
+                <a class="left carousel-control" href="#carousel-example-generic02" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#carousel-example-generic02" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!------------------设置底部位置的地址栏------------>
+<footer>
+    <div class="container footer1">
+        <div class="col-lg-2 col-md-2 col-sm-4 col-xs-4">
+            <ul class="list-unstyled">
+                <li class="footerOne">学习</li>
+                <li>Windows</li>
+                <li>Office</li>
+                <li>Skype</li>
+                <li>Outlook</li>
+                <li>OneDrive</li>
+                <li>MSN</li>
+            </ul>
+        </div>
+        <div class="col-lg-2 col-md-2 col-sm-4 col-xs-4">
+            <ul class="list-unstyled">
+                <li class="footerOne">设备</li>
+                <li>Microsoft Surface</li>
+                <li>Xbox</li>
+                <li>PC</li>
+                <li>Microsoft Lumia</li>
+            </ul>
+        </div>
+        <div class="col-lg-2 col-md-2 col-sm-4 col-xs-4">
+            <ul class="list-unstyled">
+                <li class="footerOne">微软官方商城</li>
+                <li>我的订单</li>
+                <li>与我们联系</li>
+            </ul>
+        </div>
+        <div class="col-lg-2 col-md-2 col-sm-4 col-xs-4">
+            <ul class="list-unstyled">
+                <li class="footerOne">下载</li>
+                <li>微软中国下载中心</li>
+                <li>所有 Windows 下载</li>
+                <li>Windows 10 Apps</li>
+                <li>Office Apps</li>
+                <li>Microsoft Lumia Apps</li>
+                <li>Internet Explorer</li>
+            </ul>
+        </div>
+        <div class="col-lg-2 col-md-2 col-sm-4 col-xs-4">
+            <ul class="list-unstyled">
+                <li class="footerOne">价值观</li>
+                <li>Microsoft 隐私</li>
+                <li>教育</li>
+            </ul>
+        </div>
+        <div class="col-lg-2 col-md-2 col-sm-4 col-xs-4">
+            <ul class="list-unstyled">
+                <li class="footerOne">公司</li>
+                <li>招贤纳士</li>
+                <li> 关于微软</li>
+                <li>公司新闻</li>
+                <li>网站地图</li>
+            </ul>
+        </div>
+    </div>
+    <div class="container footer2">
+        <p class="col-lg-2 col-md-12 col-sm-12 hidden-xs">
+            <span class="glyphicon glyphicon-globe"></span>
+            中文(中华人民共和国)‎
+        </p>
+        <p class="visible-xs col-xs-12">
+            <span class="glyphicon glyphicon-globe"></span>
+            中文(中华人民共和国)‎
+        </p>
+        <ul class="list-inline list-unstyled text-right col-lg-10 visible-lg">
+            <li>与我们联系</li>
+            <li>隐私权声明</li>
+            <li>使用条款</li>
+            <li>商标</li>
+            <li>关于我们的广告</li>
+            <li>京ICP备09042378号-6 </li>
+            <li>京公网安备 11010802010597</li>
+            <li>© 2017 Microsoft</li>
+        </ul>
+        <ul class="list-inline list-unstyled  hidden-lg col-md-12 col-sm-12 col-xs-12">
+            <li>与我们联系</li>
+            <li>隐私权声明</li>
+            <li>使用条款</li>
+            <li>商标</li>
+            <li>关于我们的广告</li>
+            <li>京ICP备09042378号-6 </li>
+            <li>京公网安备 11010802010597</li>
+            <li>© 2017 Microsoft</li>
+        </ul>
+
+    </div>
+</footer>
+
+<!------------------设定固定位置区域------------------->
+<div class="fix text-center visible-lg">
+    网站反馈
+</div>
+</body>
+
+<script src="bootstrap/bootstrap-3.3.5-dist/js/jquery-3.1.0.min.js"></script>
+<script src="bootstrap/bootstrap-3.3.5-dist/js/bootstrap.js"></script>
+<script src="js/microsoft.js"></script>
+</html>

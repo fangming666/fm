@@ -1,0 +1,40 @@
+<ons-page id="my" ng-controller="myController" style="background-color: rgba(128,128,128,0.1)">
+    <ons-toolbar>
+        <div class="center">我的</div>
+        <div class="right">
+        <ons-icon ng-click="music()" icon="ion-heart" style="font-size: 30px;margin-top: 6px;margin-right: 5px"></ons-icon>
+        </div>
+    </ons-toolbar>
+
+    <div class="one">
+        <ons-list>
+            <ons-list-item  modifier="chevron">
+                <img src="img/logo.png"><span>请登录</span>
+            </ons-list-item>
+        </ons-list>
+    </div>
+
+    <div class="two" >
+        <ons-list>
+            <ons-list-item modifier="chevron" ng-click="myNews()">
+                <span>我的消息</span>
+            </ons-list-item>
+        </ons-list>
+    </div>
+
+    <div class="three">
+        <ons-list ng-repeat="item in arr">
+            <ons-list-item  modifier="chevron" ng-click="clicks($index)">
+                <span>{{item.content}}</span>
+            </ons-list-item>
+        </ons-list>
+    </div>
+
+    <div class="four">
+        <ons-list ng-repeat="item in arr1">
+            <ons-list-item  modifier="chevron">
+                <span>{{item.content}}</span>
+            </ons-list-item>
+        </ons-list>
+    </div>
+</ons-page>

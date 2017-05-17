@@ -1,0 +1,183 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Microsoft YaHei", "微软雅黑", tahoma, arial, simsun, "宋体";
+}
+/*************设置头部部分*************/
+/***设置LOGO部分****/
+header {
+  /*设置导航菜单*/
+  /*设置搜索框*/
+  /*设置购物车登录按钮*/
+}
+header .navbar-brand img {
+  height: 25px;
+  margin-left: 10px;
+}
+header .dropdown-menu li a {
+  height: 40px;
+  line-height: 40px;
+}
+header #search {
+  float: right;
+  margin-right: 100px;
+  padding-top: 10px;
+}
+header #headerShop {
+  height: 50px;
+  line-height: 50px;
+  float: right;
+  margin-right: -400px;
+  text-align: center;
+}
+/***********************设置图片轮播区域************************/
+.carousel {
+  position: relative;
+  margin-top: 30px;
+}
+.carousel h4 {
+  font-weight: 100;
+  background-color: red;
+  text-align: center;
+  height: 50px;
+  line-height: 50px;
+}
+.carousel h4 span {
+  color: white;
+}
+.carousel h4 a {
+  color: white;
+  text-decoration: none;
+}
+.carousel h4 a:hover {
+  text-decoration: underline;
+}
+/*****图片轮播的红色标题部分****/
+#carousel-example-generic {
+  border: 0;
+  margin-top: -10px;
+}
+#carousel-example-generic1 {
+  margin-top: -10px;
+}
+.carousel-indicators li {
+  background-color: #000 \9;
+  background-color: #000000;
+  border: 1px solid black;
+}
+.carousel-caption {
+  position: absolute;
+  left: 20%;
+  top: 30%;
+  color: black;
+}
+.carousel-caption h3 {
+  font-size: 30px;
+  vertical-align: middle;
+}
+.carousel-caption button {
+  background-color: black;
+  color: white;
+}
+.carousel .container-fluid {
+  position: relative;
+}
+.carousel .container-fluid .carousel-indicators {
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+}
+.carousel .container-fluid button {
+  margin-bottom: 10px;
+}
+/**********************商品区域*********************/
+.shop > div {
+  padding: 0;
+}
+.shop > div img {
+  margin-top: 20px;
+  width: 100%;
+}
+/**********************商品商城区域*****************/
+.shopMall {
+  color: white;
+  margin-top: 50px;
+}
+.shopMall img {
+  width: 100%;
+}
+.shopMall h4 {
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.shopMall h2 {
+  font-weight: bold;
+}
+.shopMall .shopMallOne {
+  margin-top: -25%;
+  margin-left: 10%;
+}
+.shopMall .shopMallTwo {
+  background-color: grey;
+  margin-top: -15px;
+  padding: 30px ;
+}
+/**********************第二商品区域*********************/
+.shopTwo > div {
+  padding: 0;
+}
+.shopTwo > div img {
+  margin-top: 150px;
+  width: 100%;
+}
+.shopThree > div {
+  padding: 0;
+}
+.shopThree > div img {
+  margin-top: 30px ;
+  width: 100%;
+}
+/************************设置底部区域*********************/
+footer {
+  padding-top: 30px;
+  color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.1);
+}
+footer li {
+  font-size: 10px;
+  line-height: 26px;
+}
+footer li:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+footer .footerOne {
+  font-size: 15px;
+}
+footer .list-inline li {
+  font-size: 13px;
+}
+footer .footer1 ul {
+  height: 200px;
+}
+footer .footer2 {
+  margin-top: 10px ;
+}
+footer .visible-xs {
+  margin-top: 50px;
+}
+/********************设置固定位置**********************/
+.fix {
+  position: fixed;
+  right: -40px;
+  width: 110px;
+  height: 35px;
+  top: 300px;
+  letter-spacing: 5px;
+  border: 1px solid blue;
+  transform: rotate(-90deg);
+}
+.fix:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}

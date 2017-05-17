@@ -1,0 +1,130 @@
+#recommend{
+  /******头部区域******/
+  ons-carousel{
+    width: 100%;
+    height: 100px;
+    ons-carousel-item {
+      display: table;
+      text-align: center;
+    }
+  }
+
+  .item-label{
+    i{
+      display: inline-block;
+      border: 20px solid orange;
+      border-radius: 20px;
+    }
+  }
+
+
+  /********图片轮播区域**********/
+  #carousel-example-generic{
+    margin-top: 10px;
+
+    .carousel-indicators{
+      position: absolute;
+      bottom: -10px;
+      li{
+        margin-left: 5px;
+      }
+    }
+  }
+
+  /********最新周刊区域*********/
+  #weekly{
+    margin-top: 20px;
+    .pull-left{
+      font-size: 20px;
+      margin-left: 5px;
+    }
+    .pull-right{
+      font-size: 18px;
+      color: rgba(255,0,0,0.8);
+      margin-top: 2px;
+      margin-right: 5px;
+    }
+    .title{
+      &:after{
+        content: "";
+        display: block;
+        clear: both;
+      }
+    }
+    #muMa{
+      ons-carousel{
+        height: 140px;
+      }
+      margin-top: 10px;
+      p{
+        display: block;
+        font-size: 13px;
+        font-family: "楷体";
+        margin-left: 10px;
+      }
+      img{
+        width: 80%;
+        margin-left: -30px;
+      }
+    }
+  }
+
+
+
+  /*************专属订阅区域**********/
+  #subscribe{
+    margin-top: 35px;
+    .pull-left{
+      font-size: 20px;
+      margin-left: 5px;
+    }
+    .pull-right{
+      font-size: 18px;
+      color: rgba(255,0,0,0.8);
+      margin-top: 2px;
+      margin-right: 5px;
+    }
+    .title{
+      &:after{
+        content: "";
+        display: block;
+        clear: both;
+      }
+    }
+    #muMa2{
+      margin-top: 10px;
+      p{
+        display: block;
+        font-size: 13px;
+      }
+      img{
+        width: 80%;
+        margin-left: -30px;
+      }
+    }
+  }
+
+  /*************精选评论区域***************/
+  #comment{
+    margin-top: 20px;
+    .pull-left{
+      font-size: 20px;  margin-left: 5px;
+    }
+    .container{
+      width: 90%;
+      height: 100px;
+      line-height: 30px;
+      font-size: 20px;
+      font-family: "楷体";
+      background-color: rgba(0,0,0,0.1);
+      border-radius: 5px;
+      #one{
+        margin-top: 18px;
+      }
+    }
+    .bottom{
+      margin-top: 5px;
+      font-family: "楷体";
+    }
+  }
+}

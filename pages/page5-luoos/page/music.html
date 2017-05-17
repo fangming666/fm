@@ -1,0 +1,22 @@
+<ons-page class="music" ng-controller="musicController">
+    <ons-toolbar>
+        <div class="left ">
+            <ons-icon ng-click="back()" icon="ion-chevron-left"></ons-icon>
+        </div>
+        <div class="center">
+            <p>音乐</p>
+        </div>
+    </ons-toolbar>
+    <section class="musicImg" ng-repeat="item in items">
+        <h3 class="text-center">{{item.title}}</h3>
+        <div id="music0" class="myMusic" style="background-image: url({{item.src}})">
+            <!--<img src={{item.src}}>-->
+        </div>
+        <p>{{item.content}}</p>
+    </section>
+   <section class="mp3">
+       <audio class="pause" controls src="music/Hurt.mp3"  type="audio/mpeg" preload>
+       </audio>
+       <img src="img/play.png" id="musicBtn" ng-click="changePlayState()">
+   </section>
+</ons-page>

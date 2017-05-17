@@ -1,0 +1,116 @@
+#recommend {
+  /******头部区域******/
+  /********图片轮播区域**********/
+  /********最新周刊区域*********/
+  /*************专属订阅区域**********/
+  /*************精选评论区域***************/
+}
+#recommend ons-carousel {
+  width: 100%;
+  height: 100px;
+}
+#recommend ons-carousel ons-carousel-item {
+  display: table;
+  text-align: center;
+}
+#recommend .item-label i {
+  display: inline-block;
+  border: 20px solid orange;
+  border-radius: 20px;
+}
+#recommend #carousel-example-generic {
+  margin-top: 10px;
+}
+#recommend #carousel-example-generic .carousel-indicators {
+  position: absolute;
+  bottom: -10px;
+}
+#recommend #carousel-example-generic .carousel-indicators li {
+  margin-left: 5px;
+}
+#recommend #weekly {
+  margin-top: 20px;
+}
+#recommend #weekly .pull-left {
+  font-size: 20px;
+  margin-left: 5px;
+}
+#recommend #weekly .pull-right {
+  font-size: 18px;
+  color: rgba(255, 0, 0, 0.8);
+  margin-top: 2px;
+  margin-right: 5px;
+}
+#recommend #weekly .title:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+#recommend #weekly #muMa {
+  margin-top: 10px;
+}
+#recommend #weekly #muMa ons-carousel {
+  height: 140px;
+}
+#recommend #weekly #muMa p {
+  display: block;
+  font-size: 13px;
+  font-family: "楷体";
+  margin-left: 10px;
+}
+#recommend #weekly #muMa img {
+  width: 80%;
+  margin-left: -30px;
+}
+#recommend #subscribe {
+  margin-top: 35px;
+}
+#recommend #subscribe .pull-left {
+  font-size: 20px;
+  margin-left: 5px;
+}
+#recommend #subscribe .pull-right {
+  font-size: 18px;
+  color: rgba(255, 0, 0, 0.8);
+  margin-top: 2px;
+  margin-right: 5px;
+}
+#recommend #subscribe .title:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+#recommend #subscribe #muMa2 {
+  margin-top: 10px;
+}
+#recommend #subscribe #muMa2 p {
+  display: block;
+  font-size: 13px;
+}
+#recommend #subscribe #muMa2 img {
+  width: 80%;
+  margin-left: -30px;
+}
+#recommend #comment {
+  margin-top: 20px;
+}
+#recommend #comment .pull-left {
+  font-size: 20px;
+  margin-left: 5px;
+}
+#recommend #comment .container {
+  width: 90%;
+  height: 100px;
+  line-height: 30px;
+  font-size: 20px;
+  font-family: "楷体";
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+#recommend #comment .container #one {
+  margin-top: 18px;
+}
+#recommend #comment .bottom {
+  margin-top: 5px;
+  font-family: "楷体";
+}

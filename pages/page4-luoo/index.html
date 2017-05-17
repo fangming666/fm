@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>落网-独立音乐推荐</title>
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scaleble=no"/>
+    <link rel="icon" type="image/x-icon" href="image/title.jpg">
+    <link rel="stylesheet" href="bootstrap-3.3.5-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="css/luoo.css">
+
+</head>
+<body>
+<!------------------------头部导航部分---------------->
+<header>
+    <!--pc端的样式-->
+    <div class="container-fluid nav">
+        <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1"></div>
+        <div class="col-lg-2 col-md-1 col-sm-2 col-xs-4">
+            <i id="logo" ></i>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-4 hidden-xs">
+            <ul class="list-unstyled list-inline">
+                <li>期刊</li>
+                <li>专业</li>
+                <li>专栏</li>
+                <li>活动</li>
+                <li>APP</li>
+            </ul>
+        </div>
+        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-4">
+            <input id="search" type="text" placeholder="搜索"/>
+        </div>
+        <div class="col-lg-3 col-md-2 col-sm-2 hidden-xs text-right">
+            <span >
+                注册/登录
+            </span>
+        </div>
+
+        <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1"></div>
+        <div class="visible-xs">
+            <button><span>登录/注册</span></button>
+        </div>
+    </div>
+</header>
+
+<!------------------------设置内容区-------------->
+<div id="content" class="container">
+
+    <!------图片轮播区域------->
+    <section id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+            <div class="item active">
+                <img src="image/lunbo1.jpg" alt="lunbo1">
+            </div>
+            <div class="item">
+                <img src="image/lunbo2.jpg" alt="lunbo2">
+            </div>
+            <div class="item">
+                <img src="image/lunbo3.jpg" alt="lunbo3">
+            </div>
+            <div class="item">
+                <img src="image/lunbo4.jpg" alt="lunbo4">
+            </div>
+        </div>
+    </section>
+
+    <!----------音乐周刊区域--------->
+    <section id="music" class="clearfix">
+        <!--标题导航区-->
+        <nav>
+            <div class="leftNav text-left col-lg-4  col-md-2 col-sm-4 col-xs-4 col-lg-offset-1 ">
+                <span>音乐周刊</span>
+            </div>
+            <div class="rightNav text-right col-lg-6 col-md-10 hidden-xs hidden-sm">
+                <ol class="list-unstyled list-inline">
+                    <li>摇滚</li>
+                    <li>另类</li>
+                    <li>民谣</li>
+                    <li>流行</li>
+                    <li>电子</li>
+                    <li>古典</li>
+                    <li>爵士</li>
+                    <li>金属</li>
+                    <li>朋克</li>
+                    <li>说唱</li>
+                    <li>更多></li>
+                </ol>
+            </div>
+        </nav>
+        <!--音乐期刊图片区域-->
+        <div class="musicLeft col-lg-6 col-lg-offset-1 visible-lg">
+            <div>
+                <img src="image/musicLeft.jpg">
+                <span>
+                    vol.897 夜的肖邦
+                </span>
+            </div>
+        </div>
+        <div class="musicRight pull-right col-lg-3  visible-lg">
+            <div>
+                <img src="image/musicRight1.jpg">
+                <span>
+                    vol.896 我们终将奔赴向前
+                </span>
+            </div>
+            <div>
+                <img src="image/musicRight2.jpg">
+                <span>
+                vol.895 两个前男&女友
+                </span>
+            </div>
+        </div>
+
+        <div class="musicLeft col-md-12 col-sm-12 col-xs-12 hidden-lg">
+            <div>
+                <img src="image/musicLeft.jpg">
+                <span>
+                    vol.897 夜的肖邦
+                </span>
+            </div>
+        </div>
+        <div  class="musicRight col-md-12 col-sm-12 col-xs-12 hidden-lg">
+            <div class="col-md-6 col-sm-6 col-xs-6">
+                <img src="image/musicRight1.jpg">
+                <span>
+                    vol.896 我们终将奔赴向前
+                </span>
+            </div>
+            <div class="col-md-6 col-sm-6 col-xs-6">
+                <img src="image/musicRight2.jpg">
+                <span>
+                vol.895 两个前男&女友
+                </span>
+            </div>
+        </div>
+
+
+    </section>
+
+    <!----------原创推荐---------->
+    <section id="original" class="clearfix">
+        <!---导航区域---->
+        <nav>
+            <div class="leftNav text-left col-lg-4  col-md-2 col-sm-4 col-xs-4 col-lg-offset-1">
+                <span>原创推荐</span>
+            </div>
+            <div class="rightNav text-right col-lg-6 col-md-10 hidden-xs hidden-sm">
+                <ol class="list-unstyled list-inline">
+                    <li>单曲</li>
+                    <li>专刊</li>
+                    <li>更多></li>
+                </ol>
+            </div>
+        </nav>
+        <!--展示区域-->
+        <div id="oriLeft" class="col-lg-5 col-lg-offset-1 col-md-5 col-sm-12">
+            <div>
+                <div class="oriImg col-lg-4">
+                    <img class="img-circle" src="image/oriLeft.jpg">
+                </div>
+                <div class="col-lg-8">
+                    <h3>TARDY</h3>
+                    <p>The White Tulips</p>
+                    <p class="text-right" id="oriData"></p>
+                </div>
+            </div>
+
+            <p>” 来自厦门的The White Tulips在经历了最近的人员更换之后，也来带了音乐风格上的变化。四位成员的审美差异让The White Tulips风格不再局限于以前的直线噪音流行和Shoegaze了，现在他们在原有的曲风中融入了80年代灵魂乐，迷幻摇滚和爵士等风格。新单曲TARDY的灵感也来自于灵魂乐的律动，将律动与美式噪音结合，探索出更丰富的表现形式，并带有独特的海滨城市的浪漫。 “</p>
+        </div>
+        <div id="oriRight" class=" col-lg-5 col-md-5  col-sm-12 col-xs-12">
+            <div class="col-lg-6 col-md-12 col-sm-6 col-xs-6">
+                <img src="image/oriRight1.jpg" alt="">
+                <p>老骥伏枥——中国摇滚三十年</p>
+                <i>厌鹊</i>
+            </div>
+            <div class="col-lg-6 col-md-12 col-sm-6 col-xs-6">
+                <img src="image/oriRight2.jpg" alt="">
+                <p>华语音乐进入了倒退时代？</p>
+                <i>假酒馆音乐</i>
+            </div>
+        </div>
+    </section>
+
+    <!-----------热门活动区域----------->
+    <section id="activity" class="clearfix">
+        <!---导航区域---->
+        <nav class="col-sm-12 col-xs-12">
+            <div class="leftNav text-left col-lg-4  col-md-2 col-sm-4 col-xs-4 col-lg-offset-1">
+                <span>热门活动</span>
+            </div>
+            <div class="rightNav text-right col-lg-6 col-md-10 hidden-xs hidden-sm">
+                <ol class="list-unstyled list-inline">
+                    <li>北京</li>
+                    <li>上海</li>
+                    <li>广州</li>
+                    <li>深圳</li>
+                    <li>武汉</li>
+                    <li>成都</li>
+                    <li>台湾</li>
+                    <li>香港</li>
+                    <li>更多></li>
+                </ol>
+            </div>
+        </nav>
+        <!--展示区域-->
+        <div class="col-lg-offset-1">
+            <!--大屏幕显示-->
+            <div class="col-lg-4 col-md-4 hidden-xs hidden-sm">
+                <div class="col-lg-5">
+                    <img src="image/ac1.jpg">
+                </div>
+                <div class="col-lg-6">
+                    <h5>京都乐器摇滚SOW新专辑2017中国巡演</h5>
+                    <p>时间：2017-04-06</p>
+                    <p>地点：广州</p>
+                    <p>场所：SD Live House</p>
+                    <p>费用：80元 - 100元</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4  hidden-xs hidden-sm">
+                <div class="col-lg-5">
+                    <img src="image/ac1.jpg">
+                </div>
+                <div class="col-lg-6">
+                    <h5>京都乐器摇滚SOW新专辑2017中国巡演</h5>
+                    <p>时间：2017-04-04</p>
+                    <p>地点：中山</p>
+                    <p>场所：SunLiveHouse</p>
+                    <p>费用：80元 - 100元</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 hidden-xs hidden-sm">
+                <div class="col-lg-5">
+                    <img src="image/ac3.jpg">
+                </div>
+                <div class="col-lg-6">
+                    <h5>柴海青指弹演奏会</h5>
+                    <br>
+                    <br>
+                    <p>时间：2017-03-25</p>
+                    <p>地点：西安</p>
+                    <p>场所：光音16原创音乐俱乐部</p>
+                    <p>费用：60元 - 80元</p>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-4  hidden-xs hidden-sm">
+                <div class="col-lg-5">
+                    <img src="image/ac4.jpg">
+                </div>
+                <div class="col-lg-6">
+                    <h5>法式荒诞生活型朋克乐队MILU中国巡演广州站</h5>
+                    <p>时间：2017-03-23</p>
+                    <p>地点：广州</p>
+                    <p>场所：SD Live House</p>
+                    <p>费用：40元 - 60元</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 hidden-xs hidden-sm">
+                <div class="col-lg-5">
+                    <img src="image/ac5.jpg">
+                </div>
+                <div class="col-lg-6">
+                    <h5>广州CU Livehouse开业趴</h5>
+                    <p>时间：2017-03-19</p>
+                    <p>地点：中山</p>
+                    <p>场所：CU livehousee</p>
+                    <p>费用：80元 - 100元</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 hidden-xs hidden-sm">
+                <div class="col-lg-5">
+                    <img src="image/ac6.jpg">
+                </div>
+                <div class="col-lg-6">
+                    <h5>南非音乐人Nonku Phiri中国巡演</h5>
+                    <p>时间：2017-03-25</p>
+                    <p>地点：广州</p>
+                    <p>场所：Tu凸空间</p>
+                    <p>费用：60元 - 80元</p>
+                </div>
+            </div>
+
+            <!--小屏幕显示-->
+            <div class="col-sm-6 col-xs-6 hidden-lg hidden-md">
+                <div class="col-lg-5">
+                    <img src="image/ac1.jpg">
+                </div>
+                <div class="col-lg-6">
+                    <h5>京都乐器摇滚SOW新专辑2017中国巡演</h5>
+                    <p>时间：2017-04-06</p>
+                    <p>地点：广州</p>
+                    <p>场所：SD Live House</p>
+                    <p>费用：80元 - 100元</p>
+                </div>
+            </div>
+            <div class="col-sm-6 col-xs-6 hidden-lg hidden-md">
+                <div class="col-lg-5">
+                    <img src="image/ac1.jpg">
+                </div>
+                <div class="col-lg-6">
+                    <h5>京都乐器摇滚SOW新专辑2017中国巡演</h5>
+                    <p>时间：2017-04-04</p>
+                    <p>地点：中山</p>
+                    <p>场所：SunLiveHouse</p>
+                    <p>费用：80元 - 100元</p>
+                </div>
+            </div>
+            <div class="col-sm-6 col-xs-6 hidden-lg hidden-md">
+                <div class="col-lg-5">
+                    <img src="image/ac3.jpg">
+                </div>
+                <div class="col-lg-6">
+                    <h5>柴海青指弹演奏会</h5>
+                    <p>时间：2017-03-25</p>
+                    <p>地点：西安</p>
+                    <p>场所：光音16原创音乐俱乐部</p>
+                    <p>费用：60元 - 80元</p>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-xs-6 hidden-lg hidden-md">
+                <div class="col-lg-5">
+                    <img src="image/ac4.jpg">
+                </div>
+                <div class="col-lg-6">
+                    <h5>法式荒诞生活型朋克乐队MILU中国巡演广州站</h5>
+                    <p>时间：2017-03-23</p>
+                    <p>地点：广州</p>
+                    <p>场所：SD Live House</p>
+                    <p>费用：40元 - 60元</p>
+                </div>
+            </div>
+            <div class="col-sm-6 col-xs-6 hidden-lg hidden-md">
+                <div class="col-lg-5">
+                    <img src="image/ac5.jpg">
+                </div>
+                <div class="col-lg-6">
+                    <h5>广州CU Livehouse开业趴</h5>
+                    <p>时间：2017-03-19</p>
+                    <p>地点：中山</p>
+                    <p>场所：CU livehousee</p>
+                    <p>费用：80元 - 100元</p>
+                </div>
+            </div>
+            <div class="col-sm-6 col-xs-6 hidden-lg hidden-md">
+                <div class="col-lg-5">
+                    <img src="image/ac6.jpg">
+                </div>
+                <div class="col-lg-6">
+                    <h5>南非音乐人Nonku Phiri中国巡演</h5>
+                    <p>时间：2017-03-25</p>
+                    <p>地点：广州</p>
+                    <p>场所：Tu凸空间</p>
+                    <p>费用：60元 - 80元</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+<!------------设置底部部分---------------->
+<footer >
+<div class="container">
+
+    <div class="col-lg-4 text-left col-md-4 col-sm-4 col-xs-4">
+        <ol class="list-unstyled">
+            <li>关于</li>
+            <li>关于落网</li>
+            <li>加入我们</li>
+            <li>联系合作</li>
+            <li>反馈建议</li>
+            <li>友情链接</li>
+        </ol>
+    </div>
+    <div class="col-lg-4 text-left col-md-4 col-sm-4 col-xs-4">
+        <ol class="list-unstyled ">
+            <li>APP</li>
+            <li>
+                <span class="glyphicon glyphicon-apple"></span>
+                for iPhone
+            </li>
+            <li>
+                <span class="glyphicon glyphicon-leaf"></span>
+                for Android
+            </li>
+            <li>
+                <span class="glyphicon glyphicon-th-large"></span>
+                for Windows Phone 8
+            </li>
+        </ol>
+    </div>
+    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-3 ">
+        <p>关注落网</p>
+        <br>
+        <p>@2017落网</p>
+        <br>
+        <p  class="footerLogo hidden-xs"></p>
+    </div>
+
+</div>
+</footer>
+</body>
+<script src="js/jquery-3.1.0.min.js"></script>
+<script src="bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
+<script src="js/luoo.js"></script>
+</html>

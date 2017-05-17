@@ -1,0 +1,16 @@
+#myNews ons-list-item {
+  min-height: 50px;
+  line-height: 50px;
+}
+#myNews .zhudong {
+  margin-top: 45px;
+}
+#myNews .zhudong ons-icon {
+  font-size: 100px;
+  margin: 40px 40%;
+}
+#myNews .zhudong p {
+  margin-top: 20px;
+  font-size: 19px;
+  font-family: 楷体;
+}

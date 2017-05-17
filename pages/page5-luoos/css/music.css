@@ -1,0 +1,41 @@
+.music ons-toolbar .left {
+  color: gray;
+}
+.music ons-toolbar .left ons-icon {
+  font-size: 35px;
+  margin-left: 5px;
+  margin-top: 3px;
+}
+.music ons-toolbar .center {
+  font-size: 19px;
+  font-family: 楷体;
+}
+.music .musicImg p {
+  text-align: center;
+  font-size: 20px;
+  font-family: 楷体;
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+.music .musicImg div {
+  width: 410px;
+  height: 393px;
+  margin-left: 1px;
+  border-radius: 400px;
+  overflow: hidden;
+  transition: all 3s;
+  margin-top: 20px;
+  background-size: 100% ;
+}
+.music .mp3 {
+  text-align: center;
+  margin: 20px auto;
+  position: relative;
+}
+.music .mp3 #musicBtn {
+  position: absolute;
+  top: 13px;
+  left: 71px;
+  width: 20px;
+  height: 20px;
+}

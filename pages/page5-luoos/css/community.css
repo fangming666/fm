@@ -1,0 +1,146 @@
+#community {
+  /**********设置标题栏区域*********/
+  /***********设置内容*********/
+}
+#community ons-toolbar .center div {
+  display: inline-block;
+  font-size: 18px;
+  width: 80px;
+}
+#community .fm {
+  border-bottom: 1px solid red;
+}
+#community #guanZhu ons-list-item {
+  position: relative;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+#community #guanZhu .head {
+  position: relative;
+}
+#community #guanZhu .head div {
+  overflow: hidden;
+  display: inline-block;
+  width: 50px;
+  height: 48px;
+  border-radius: 100px;
+}
+#community #guanZhu .head div img {
+  width: 100%;
+}
+#community #guanZhu .span1 {
+  position: absolute;
+  top: -8px;
+  left: 60px;
+  font-family: 楷体;
+}
+#community #guanZhu .p1 {
+  font-size: 12px;
+  color: grey;
+  margin-left: 50px;
+  margin-top: -40px;
+}
+#community #guanZhu .p1 span {
+  margin-left: 10px;
+}
+#community #guanZhu .and {
+  position: absolute;
+  right: 5px;
+  top: 4px;
+  width: 100px;
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid #00b8e9;
+}
+#community #guanZhu .music {
+  margin-top: 20px;
+}
+#community #guanZhu .music div {
+  width: 32%;
+  display: inline-block;
+}
+#community #guanZhu .music div p {
+  font-family: 楷体;
+}
+#community #guanZhu .music div img {
+  width: 100%;
+}
+#community #reMen ons-list-item,
+#community #zuiXin ons-list-item {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+#community #reMen .head,
+#community #zuiXin .head {
+  position: relative;
+}
+#community #reMen .head div,
+#community #zuiXin .head div {
+  overflow: hidden;
+  display: inline-block;
+  width: 50px;
+  height: 48px;
+  border-radius: 100px;
+}
+#community #reMen .head div img,
+#community #zuiXin .head div img {
+  width: 100%;
+}
+#community #reMen .head span,
+#community #zuiXin .head span {
+  position: absolute;
+  top: 5px;
+  left: 60px;
+  font-family: 楷体;
+}
+#community #reMen .bg,
+#community #zuiXin .bg {
+  width: 100%;
+  height: 100px;
+}
+#community #reMen .bg img,
+#community #zuiXin .bg img {
+  width: 100%;
+}
+#community #reMen .scrap,
+#community #zuiXin .scrap {
+  margin-top: 195px;
+  width: 100%;
+  line-height: 20px;
+  font-size: 16px;
+  font-family: 楷体;
+  height: 62px;
+  word-break: break-all;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+#community #reMen .scrap1,
+#community #zuiXin .scrap1 {
+  width: 100%;
+  line-height: 20px;
+  font-size: 16px;
+  font-family: 楷体;
+  height: 62px;
+  word-break: break-all;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+#community #reMen .pull-left,
+#community #zuiXin .pull-left {
+  font-size: 14px;
+  color: lightgrey;
+  margin-left: 2px;
+  font-family: 新宋体;
+}
+#community #reMen ons-icon,
+#community #zuiXin ons-icon {
+  margin-right: 4px;
+}
+#community #reMen i,
+#community #zuiXin i {
+  margin-right: 4px;
+}

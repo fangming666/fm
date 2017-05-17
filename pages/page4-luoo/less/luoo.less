@@ -1,0 +1,185 @@
+/******************设置头部区域*************/
+header{
+  height: 50px;
+  background-color: #F2F2F2;
+  border-top: 2px solid #dd5862;
+  overflow: hidden;
+  margin-bottom: 20px;
+  .nav{
+    i{
+      display: inline-block;
+      width: 33px;
+      height: 38px;
+      background-image: url("../image/logo.png");
+      background-position-y:-296px ;
+    }
+    div{
+      line-height: 50px;
+      ul{
+        font-size: 20px;
+        font-family:"华文楷体";
+        li{
+          &:hover{
+            cursor: pointer;
+            color: #00b8e9;
+          }
+        }
+      }
+      span{
+        font-size: 18px;
+        font-family:"华文楷体";
+        &:hover{
+          cursor: pointer;
+          color: #00b8e9;
+        }
+      }
+      input{
+        padding: 4px;
+        height: 25px;
+        width: 70%;
+        border-radius: 10px;
+        outline: none;
+        background-color: #F2F2F2;
+      }
+    }
+  }
+  button{
+    display: inline-block;
+    padding: 3px;
+    height: 28px;
+    line-height: 18px;
+  }
+}
+
+/**************************内容区域*************************/
+#content{
+  section{
+    margin-bottom: 20px;
+  }
+  /******设置图片轮播区域******/
+  #carousel-example-generic{
+    position: relative;
+    img{
+     margin: 0 auto;
+    }
+    ol{
+      position: absolute;
+      bottom: -10px;
+      li{
+        background-color:black;
+      }
+
+    }
+  }
+
+  .leftNav{
+    border-left:3px solid  #dd5862;
+    span{
+      font-size: 20px;
+    }
+  }
+  .rightNav{
+    line-height: 30px;
+    font-weight: bold;
+    li{
+      &:hover{
+        color:#00b8e9 ;
+        cursor: pointer;
+      }
+    }
+  }
+  /*********设置音乐周刊区域*********/
+  #music{
+    /**音乐期刊图片区域**/
+    img{
+      width: 120%;
+      margin-bottom: 5px;
+    }
+    .musicLeft,.musicRight{
+      div{
+        border-radius: 5px;
+        overflow: hidden;
+        &:hover{
+          cursor: pointer;
+        }
+      }
+    }
+    .pull-right{
+      margin-right: 70px;
+    }
+
+}
+
+  /***********设置原创区域**************/
+  #original{
+    h3{
+      &:hover{
+        color:#dd5862 ;
+        cursor: pointer;
+      }
+    }
+    .oriImg{
+      overflow: hidden;
+      img{
+        width: 100%;
+      }
+    }
+  }
+
+  /**右边区域**/
+  #oriRight{
+    img{
+      width: 100%;
+    }
+    p{
+      margin-top: 30px;
+      &:hover{
+        cursor: pointer;
+        color:#dd5862 ;
+      }
+    }
+    i{
+      margin-top: 30px;
+      font-style: normal;
+      font-family: "楷体";
+      font-weight: bold;
+    }
+  }
+
+  /*************热门活动区域*************/
+  #activity{
+   div{
+     h5{
+       font-weight: bold;
+       &:hover{
+         color: #dd5862 ;
+         cursor: pointer;
+       }
+     }
+        img{
+          width: 100%;
+          &:hover{
+            cursor: pointer;
+          }
+        }
+   }
+  }
+}
+
+/*******************底部区域****************/
+footer{
+  color: white;
+  padding: 10px;
+  background-color: #222;
+  font-family: "楷体";
+  ol{
+    line-height: 25px;
+  }
+
+  .footerLogo{
+    width: 133px;
+    height: 29px;
+    background-image: url("../image/logo.png");
+  }
+}
+

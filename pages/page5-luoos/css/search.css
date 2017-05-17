@@ -1,0 +1,17 @@
+.search .left {
+  color: gray;
+}
+.search .left ons-icon {
+  font-size: 35px;
+  margin-left: 5px;
+  margin-top: 3px;
+}
+.search input {
+  border-radius: 5px;
+  border: 1px solid lightgray;
+  width: 87%;
+  height: 90%;
+  position: absolute;
+  right: 5px;
+  top: 2px;
+}

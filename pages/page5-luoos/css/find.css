@@ -1,0 +1,83 @@
+/**********期刊专题区域***********/
+#subject {
+  margin-top: 25px;
+}
+#subject .pull-left {
+  font-size: 20px;
+  margin-left: 5px;
+}
+#subject .pull-right {
+  font-size: 18px;
+  color: rgba(255, 0, 0, 0.8);
+  margin-top: 2px;
+  margin-right: 5px;
+}
+#subject .title:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+#subject #muMa ons-carousel {
+  height: 120px;
+  position: relative;
+}
+#subject #muMa .text-center {
+  color: white;
+  font-size: 25px;
+  font-family: 楷体;
+  position: absolute;
+  top: 20%;
+  left: 30%;
+}
+#subject #muMa .text-center .text-center2 {
+  font-size: 16px;
+  font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+#subject #muMa img {
+  width: 80%;
+  margin-left: 10px;
+}
+/***********期刊分类区域*********/
+#classify {
+  margin-top: 25px;
+}
+#classify .pull-left {
+  font-size: 20px;
+  margin-left: 5px;
+}
+#classify .pull-right {
+  font-size: 18px;
+  color: rgba(255, 0, 0, 0.8);
+  margin-top: 2px;
+  margin-right: 5px;
+}
+#classify .title:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+#classify ons-carousel {
+  height: 60px;
+}
+#classify ons-carousel div {
+  margin-left: 8px;
+  width: 80px;
+  height: 60px;
+  line-height: 60px;
+  background-color: rgba(0, 0, 0, 0.1);
+  font-family: 楷体;
+}
+/*************列表区域*************/
+#myList ons-list {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+#myList ons-list ons-list-item {
+  height: 50px;
+  line-height: 50px;
+  border-bottom: 1px solid grey;
+}
+#myList ons-list ons-list-item ons-icon {
+  float: right;
+  margin-top: 15px;
+}

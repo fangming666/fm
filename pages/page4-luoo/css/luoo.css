@@ -1,0 +1,159 @@
+/******************设置头部区域*************/
+header {
+  height: 50px;
+  background-color: #F2F2F2;
+  border-top: 2px solid #dd5862;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+header .nav i {
+  display: inline-block;
+  width: 33px;
+  height: 38px;
+  background-image: url("../image/logo.png");
+  background-position-y: -296px;
+}
+header .nav div {
+  line-height: 50px;
+}
+header .nav div ul {
+  font-size: 20px;
+  font-family: "华文楷体";
+}
+header .nav div ul li:hover {
+  cursor: pointer;
+  color: #00b8e9;
+}
+header .nav div span {
+  font-size: 18px;
+  font-family: "华文楷体";
+}
+header .nav div span:hover {
+  cursor: pointer;
+  color: #00b8e9;
+}
+header .nav div input {
+  padding: 4px;
+  height: 25px;
+  width: 70%;
+  border-radius: 10px;
+  outline: none;
+  background-color: #F2F2F2;
+}
+header button {
+  display: inline-block;
+  padding: 3px;
+  height: 28px;
+  line-height: 18px;
+}
+/**************************内容区域*************************/
+#content {
+  /******设置图片轮播区域******/
+  /*********设置音乐周刊区域*********/
+  /***********设置原创区域**************/
+  /**右边区域**/
+  /*************热门活动区域*************/
+}
+#content section {
+  margin-bottom: 20px;
+}
+#content #carousel-example-generic {
+  position: relative;
+}
+#content #carousel-example-generic img {
+  margin: 0 auto;
+}
+#content #carousel-example-generic ol {
+  position: absolute;
+  bottom: -10px;
+}
+#content #carousel-example-generic ol li {
+  background-color: black;
+}
+#content .leftNav {
+  border-left: 3px solid  #dd5862;
+}
+#content .leftNav span {
+  font-size: 20px;
+}
+#content .rightNav {
+  line-height: 30px;
+  font-weight: bold;
+}
+#content .rightNav li:hover {
+  color: #00b8e9 ;
+  cursor: pointer;
+}
+#content #music {
+  /**音乐期刊图片区域**/
+}
+#content #music img {
+  width: 120%;
+  margin-bottom: 5px;
+}
+#content #music .musicLeft div,
+#content #music .musicRight div {
+  border-radius: 5px;
+  overflow: hidden;
+}
+#content #music .musicLeft div:hover,
+#content #music .musicRight div:hover {
+  cursor: pointer;
+}
+#content #music .pull-right {
+  margin-right: 70px;
+}
+#content #original h3:hover {
+  color: #dd5862 ;
+  cursor: pointer;
+}
+#content #original .oriImg {
+  overflow: hidden;
+}
+#content #original .oriImg img {
+  width: 100%;
+}
+#content #oriRight img {
+  width: 100%;
+}
+#content #oriRight p {
+  margin-top: 30px;
+}
+#content #oriRight p:hover {
+  cursor: pointer;
+  color: #dd5862 ;
+}
+#content #oriRight i {
+  margin-top: 30px;
+  font-style: normal;
+  font-family: "楷体";
+  font-weight: bold;
+}
+#content #activity div h5 {
+  font-weight: bold;
+}
+#content #activity div h5:hover {
+  color: #dd5862 ;
+  cursor: pointer;
+}
+#content #activity div img {
+  width: 100%;
+}
+#content #activity div img:hover {
+  cursor: pointer;
+}
+/*******************底部区域****************/
+footer {
+  color: white;
+  padding: 10px;
+  background-color: #222;
+  font-family: "楷体";
+}
+footer ol {
+  line-height: 25px;
+}
+footer .footerLogo {
+  width: 133px;
+  height: 29px;
+  background-image: url("../image/logo.png");
+}

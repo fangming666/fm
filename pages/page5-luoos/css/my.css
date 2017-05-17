@@ -1,0 +1,29 @@
+#my {
+  background-color: grey;
+}
+#my .one {
+  margin-bottom: 20px;
+}
+#my .one ons-list {
+  height: 110px;
+}
+#my .one ons-list ons-list-item {
+  height: 110px;
+  line-height: 110px;
+}
+#my .one ons-list ons-list-item span {
+  font-size: 20px;
+  font-family: 楷体;
+  margin-left: 10px;
+  color: grey;
+}
+#my ons-list-item {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  height: 60px;
+  line-height: 60px;
+}
+#my .two,
+#my .three,
+#my .four {
+  margin-bottom: 25px;
+}
